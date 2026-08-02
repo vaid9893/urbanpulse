@@ -132,13 +132,13 @@ if __name__ == "__main__":
     # Launch: 1 HIGH_PRIORITY consumer + 3 STANDARD_PRIORITY consumers,
     # each in its own process (mirrors how they'd run as separate services).
     procs = [
-        multiprocessing.Process(target=high_priority_consumer, kwargs={"run_seconds": 120}),
+        multiprocessing.Process(target=high_priority_consumer, kwargs={"run_seconds": 300}),
         multiprocessing.Process(target=standard_priority_consumer,
-                                 kwargs={"consumer_index": 1, "run_seconds": 120}),
+                                 kwargs={"consumer_index": 1, "run_seconds": 300}),
         multiprocessing.Process(target=standard_priority_consumer,
-                                 kwargs={"consumer_index": 2, "run_seconds": 120}),
+                                 kwargs={"consumer_index": 2, "run_seconds": 300}),
         multiprocessing.Process(target=standard_priority_consumer,
-                                 kwargs={"consumer_index": 3, "run_seconds": 120}),
+                                 kwargs={"consumer_index": 3, "run_seconds": 300}),
     ]
     for p in procs:
         p.start()
