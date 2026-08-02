@@ -1,0 +1,6 @@
+route_id,route_name,terminal,scheduled_arrival_time
+R001,Whitefield Express,Majestic Terminal,08:15:00
+R002,Electronic City Link,Silk Board Hub,08:20:00
+R003,Airport Shuttle,KIA Terminal,08:10:00
+R004,Hebbal Circular,Hebbal Depot,08:25:00
+R005,Yeshwanthpur Loop,Yeshwanthpur Junction,08:05:00
